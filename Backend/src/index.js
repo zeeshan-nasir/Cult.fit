@@ -15,6 +15,7 @@ const registerController = require("./controllers/register.controller.js");
 const loginController = require("./controllers/login.controller.js");
 const checkoutController = require("./controllers/checkout.controller.js");
 
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
