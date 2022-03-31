@@ -2,12 +2,14 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 
-// const jwt = require('jsonwebtoken');
-// const generateToken = (user) => {
-//     return jwt.sign({ user }, process.env.SECRET_KEY);
-// }
+const jwt = require('jsonwebtoken');
+const generateToken = (user) => {
+    return jwt.sign({ user }, process.env.SECRET_KEY);
+}
 
 const passport = require("./configs/google.auth.js");
+
+// controllers
 
 const userController = require("./controllers/user.controller.js");
 const eatController = require("./controllers/eat.controller.js");
@@ -45,7 +47,7 @@ app.get(
     }),
 
     function (req, res) {
-        // const token = generateToken(req.user);
+        const token = generateToken(req.user);
         return res.status(200).send({ user: req.user, token });
     }
 );
