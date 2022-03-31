@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
+require('dotenv').config();
+
 
 const jwt = require('jsonwebtoken');
 const generateToken = (user) => {
@@ -9,7 +11,8 @@ const generateToken = (user) => {
 
 const passport = require("./configs/google.auth.js");
 
-// controllers
+
+// Controllers
 
 const userController = require("./controllers/user.controller.js");
 const eatController = require("./controllers/eat.controller.js");
@@ -22,6 +25,28 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
 
+
+// Cookies
+
+const cookieParser = require('cookie-parser');
+const sessions = require('express-session');
+
+const oneDay = 1000 * 60 * 60 * 12;
+
+app.use(
+    sessions({
+        secret: process.env.KEY,
+        saveUninitialized: true,
+        cookie: { maxAge: oneDay },
+        resave: false,
+    })
+);
+
+app.use(express.static(__dirname));
+app.use(cookieParser());
+
+
+// Routes
 
 app.use("/user", userController);
 
