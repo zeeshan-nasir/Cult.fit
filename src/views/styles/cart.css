@@ -14,7 +14,6 @@
 }
 
 #container {
-  /* border: solid; */
   width: 80%;
   height: 600px;
   margin: auto;
@@ -25,26 +24,38 @@
 }
 
 #left {
-  /* border: solid red; */
   width: 55%;
   height: 60%;
-  /* position: sticky; */
-  /* top: 60px; */
   color: rgb(58, 58, 58);
 }
 
 #right {
-  /* border: solid; */
   width: 40%;
   height: 100%;
   cursor: default;
 }
 
+#textLeftup {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 1%;
+}
+
+#total {
+  color: black;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+#textLeftdown {
+  margin: 10% 0 3% 0;
+  font-weight: bold;
+}
+
 #left_up {
-  /* border: 1px solid rgba(199, 199, 199, 0.945); */
   border-radius: 13px;
   width: 100%;
-  height: 40%;
+  height: 50%;
   overflow: scroll;
   padding: 3%;
   font-size: 20px;
@@ -93,21 +104,17 @@
 }
 
 #left_down {
-  /* border: solid red; */
-  /* background-color: rgb(238, 238, 238); */
-  width: 100%;
-  height: 40%;
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 60%;
+  width: 90%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
   overflow-x: scroll;
   overscroll-behavior-inline: contain;
   gap: 15px;
-  cursor: default;
+  cursor: pointer;
 }
 
 #left_down > div {
-  /* border: solid yellow; */
   border-radius: 10px;
   display: flex;
   width: 100%;
@@ -118,7 +125,6 @@
 }
 
 #left_down > div > div {
-  /* border: solid blue; */
   width: 50%;
   height: 100%;
   object-fit: fill;
@@ -145,21 +151,20 @@
 }
 
 #address {
-  /* border: yellow solid; */
   display: flex;
   justify-content: space-between;
   height: 10%;
   width: 100%;
 }
+
 #instruction {
-  /* border: yellow solid; */
   display: flex;
   justify-content: space-between;
   height: 15%;
   width: 100%;
 }
+
 #time {
-  /* border: yellow solid; */
   display: flex;
   justify-content: space-between;
   height: 15%;
@@ -167,7 +172,6 @@
 }
 
 #total_price {
-  /* border: solid; */
   width: 100%;
   height: 60%;
   margin-top: 8%;
@@ -175,7 +179,6 @@
 }
 
 #total_price > div {
-  /* border: solid; */
   display: flex;
   justify-content: space-between;
   height: 13%;

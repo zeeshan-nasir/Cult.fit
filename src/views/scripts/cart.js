@@ -16,6 +16,10 @@ document.getElementById("cart").addEventListener("click", () => {
     window.location.href = "cart.html";
 });
 
+document.getElementById("checkDiv").addEventListener("click", () => {
+    window.location.href = "checkout.html";
+});
+
 function login_counter () {
     let cart_data_1 = JSON.parse(localStorage.getItem("cart_data")) || [];
 
@@ -24,7 +28,8 @@ function login_counter () {
 
 login_counter();
 
-// ------------------------------------start-----------------------
+
+// Data for people also add div
 
 let food_data = [
     { img_url: "https://bit.ly/3LNwF82", name: "Ghar ke Rajma, Aloo Methi & Jeera Pulao", type: "🟢", cal: "824", fibre: "High fibre", price: "89", str_price: "178", des: "What’s better than a rice bowl? A rajma rice bowl! Indulge in the wholesomeness and happiness of the all-appreciated rajma that’s served with our aloo-methi and ghee-ful jeera pulao in this rice bowl.", allergen: "Allergen information: Gluten, egg, soy, vinegar, nutmeg, dairy." },
@@ -80,6 +85,7 @@ let total_price = () => {
     })
 }
 
+// Total div 
 
 let discount_total = cart_data.reduce((a, b) => {
     return (+a + +b.price);
@@ -145,4 +151,5 @@ let display_data = () => {
         document.getElementById('left_down').append(div);
     })
 }
+
 display_data();

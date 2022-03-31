@@ -9,9 +9,7 @@
   font-size: large;
 }
 
-
 /* Slider Div */
-
 
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Lato:wght@100&family=Montserrat:wght@200&family=News+Cycle&family=Roboto:ital,wght@0,300;1,300&family=Rubik&family=Spline+Sans:wght@400;500&display=swap");
 
@@ -27,16 +25,15 @@
   overflow: hidden;
 }
 
-.slider_main #sliders {
+#sliders {
   position: relative;
-  /* border: solid; */
   height: 100%;
   width: 100%;
   display: inline-flex;
   transition: 1s;
 }
 
-.slider_main #sliders img {
+#sliders img {
   width: 100%;
   height: 100%;
 }
@@ -76,11 +73,11 @@
   background-color: black !important;
 }
 
-
 /* Menu Div */
 
 #menu_box {
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 #menu_head {
@@ -206,13 +203,14 @@
 
 #createItems {
   width: 100px;
-  border: 1px solid rgb(212, 212, 212);
+  border: 1px solid rgb(236, 236, 236);
   width: 15%;
-  height: 410px;
+  height: 430px;
   text-align: center;
   position: sticky;
   top: 100px;
-  margin-right: 10px;
+  margin-right: 20px;
+  padding-top: 10px;
 }
 
 #dishForm {
@@ -225,12 +223,11 @@
 #dishForm > input {
   width: 80%;
   height: 25px;
-  border-radius: 10px;
-  border: 1px solid grey;
+  border: 1px solid rgb(204, 204, 204);
   padding-left: 5px;
 }
 
-#dishBtn{
+#dishBtn {
   background-color: rgb(22, 25, 35);
   color: white;
   width: 30px;
@@ -242,7 +239,6 @@
   margin-bottom: 15px;
   margin-top: 10px;
 }
-
 
 /* Sidebar */
 
@@ -265,6 +261,7 @@ a {
   width: 15%;
   margin-top: 3%;
   z-index: 1;
+  margin-right: -17px;
 }
 
 #menu_sidebar ul {
@@ -282,9 +279,7 @@ a {
   cursor: pointer;
 }
 
-
 /* Menu Items */
-
 
 #dish_item {
   display: grid;
