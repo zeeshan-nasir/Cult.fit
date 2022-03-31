@@ -5,10 +5,8 @@ const Checkout = require("../models/checkout.model.js");
 
 router.post("", async (req, res) => {
     try {
-        console.log(req.body);
         const checkout = await Checkout.create(req.body);
-        return res.status(200).redirect("http://127.0.0.1:5500/GitHub/Cult.fit-Clone/payment.html");
-        // return res.status(500).send(checkout)
+        return res.status(200).redirect("http://127.0.0.1:5500/Cult.fit/payment.html");
     }
     catch (error) {
         return res.status(500).send({ err: error.message })
