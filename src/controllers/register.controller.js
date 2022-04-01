@@ -27,7 +27,7 @@ router.post("", async (req, res) => {
 
         const token = generateToken(user);
         // res.status(200).send({ user, token });
-        return res.status(200).redirect("http://127.0.0.1:5500/Cult.fit/login.html");
+        return res.status(200).redirect("views/login.html");
     }
     catch (err) {
         return res.status(500).send(err.message);

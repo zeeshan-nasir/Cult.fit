@@ -7,10 +7,10 @@ const authorise = require("../middlewares/authorise.js");
 const Eat = require("../models/eat.model.js");
 
 
-router.post("", authenticate, async (req, res) => {
+router.post("", async (req, res) => {
     try {
         const eat = await Eat.create(req.body);
-        return res.status(200).redirect("http://127.0.0.1:5500/Cult.fit/eat-admin.html");
+        return res.status(200).redirect("views/eat-admin.html");
     }
     catch (err) {
         return res.status(500).send(err.message);

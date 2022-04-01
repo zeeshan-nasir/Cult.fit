@@ -1,6 +1,7 @@
 const authorise = (permittedRole) => {
     return (req, res, next) => {
         const user = req.user;
+        console.log(req.user);
         let isPermitted = false;
 
         if (user.role == permittedRole) {

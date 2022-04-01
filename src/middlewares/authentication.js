@@ -11,13 +11,13 @@ const verifyToken = (token) => {
 }
 
 const authenticate = async (req, res, next) => {
-    if (!req.headers.authorisation)
-        return res.status(400).send({ message: "Authorisation token not found or incorrect" });
+    if (!req.headers.authorization)
+        return res.status(400).send({ message: "Authentication token not found or incorrect" });
 
-    if (!req.headers.authorisation.startsWith("Bearer "))
-        return res.status(400).send({ message: "Authorisation token not found or incorrect" });
+    if (!req.headers.authorization.startsWith("Bearer "))
+        return res.status(400).send({ message: "Authentication token not found or incorrect" });
 
-    const token = req.headers.authorisation.trim().split(" ")[1];
+    const token = req.headers.authorization.trim().split(" ")[1];
 
     let decoded;
     try {
@@ -25,7 +25,7 @@ const authenticate = async (req, res, next) => {
     }
     catch (err) {
         console.log(err);
-        return res.status(400).send({ message: "Authorisation token not found or incorrect" });
+        return res.status(400).send({ message: "Authentication token not found or incorrect" });
     }
 
     console.log(decoded);

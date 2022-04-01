@@ -67,8 +67,8 @@ app.get('/auth/google',
 app.get(
     '/auth/google/callback',
     passport.authenticate('google', {
-        failureRedirect: 'http://127.0.0.1:5500/Cult.fit/login.html', session: false,
-        successRedirect: 'http://127.0.0.1:5500/Cult.fit/eat-admin.html',
+        failureRedirect: 'http://127.0.0.1:5500/Unit4/Cult.fit/src/views/login.html', session: false,
+        successRedirect: 'http://127.0.0.1:5500/Unit4/Cult.fit/src/views/eat-admin.html',
     }),
 
     function (req, res) {
