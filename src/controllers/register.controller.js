@@ -1,13 +1,5 @@
 const express = require("express");
 const router = express.Router();
-const jwt = require('jsonwebtoken');
-require('dotenv').config();
-
-const User = require("../models/user.model.js");
-
-const generateToken = (user) => {
-    return jwt.sign({ user }, process.env.SECRET_KEY);
-};
 
 // To register user
 
@@ -25,8 +17,7 @@ router.post("", async (req, res) => {
             role: req.body.role,
         });
 
-        const token = generateToken(user);
-        // res.status(200).send({ user, token });
+        // res.status(200).send({ user });
         return res.status(200).redirect("views/login.html");
     }
     catch (err) {

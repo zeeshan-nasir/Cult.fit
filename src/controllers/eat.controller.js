@@ -7,7 +7,7 @@ const authorise = require("../middlewares/authorise.js");
 const Eat = require("../models/eat.model.js");
 
 
-router.post("", async (req, res) => {
+router.post("", authenticate, authorise("admin"), async (req, res) => {
     try {
         const eat = await Eat.create(req.body);
         return res.status(200).redirect("views/eat-admin.html");
