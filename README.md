@@ -12,4 +12,3 @@ Tech Stacks:
 • MongoDB
 • HTML
 • CSS
-Deployed website: 
