@@ -10,11 +10,6 @@
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/eatAdmin.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <link href="//db.onlinewebfonts.com/c/47b83f8dbd3bf93e0df5674b32c6a7e4?family=BrandonTextWeb-Regular"
-        rel="stylesheet" type="text/css" />
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
@@ -33,25 +28,11 @@
 
         <!-- Sliders -->
 
-
         <div class="slider_main">
             <div id="sliders">
                 <img src="https://bit.ly/3HmA7Dr" alt="image">
                 <img src="https://bit.ly/3p5u3Zz" alt="image">
                 <img src="https://bit.ly/34YOLDA" alt="image">
-            </div>
-            <div style="display: flex; justify-content: space-between;">
-                <div id="slider_btn">
-                    <span id="btn1" class="active"></span>
-                    <span id="btn2"></span>
-                    <span id="btn3"></span>
-                </div>
-                <div id="slider_arrow" style="gap: 0px;">
-                    <i class="material-icons-outlined" id="left_arrow_btn"
-                        style="font-size: 30px; font-weight: bolder;">chevron_left</i>
-                    <i class="material-icons-outlined" id="right_arrow_btn"
-                        style="font-size: 30px; font-weight: bolder;">navigate_next</i>
-                </div>
             </div>
         </div>
 
@@ -63,21 +44,11 @@
                     <div id="item_select">
                         <p id="eat_now">EAT NOW</p>
                         <ul id="ul_list">
-                            <a href="#rice_bowl" id="li1">
-                                <li>EAT NOW</li>
-                            </a>
-                            <a href="#non_veg_curries" id="li2">
-                                <li>TODAY'S DINNER</li>
-                            </a>
-                            <a href="#kulcha_burger" id="li3">
-                                <li>TOMORROW'S BREAKFAST</li>
-                            </a>
-                            <a href="#indian_thalis" id="li4">
-                                <li>TOMORROW'S LUNCH</li>
-                            </a>
-                            <a href="#bread_rice" id="li5">
-                                <li>TOMORROW'S SNACKS</li>
-                            </a>
+                            <li>EAT NOW</li>
+                            <li>TODAY'S DINNER</li>
+                            <li>TOMORROW'S BREAKFAST</li>
+                            <li>TOMORROW'S LUNCH</li>
+                            <li>TOMORROW'S SNACKS</li>
                         </ul>
                     </div>
                 </div>
@@ -88,20 +59,19 @@
                         <img src="./images/filter.png">
                         <span id="filter_img_class">FILTERS</span>
                         <div id="filter_overlay">
-                            <div style="margin-bottom: 10px; display: flex; justify-content: space-between;">
+                            <div id="upperFilt">
                                 <div>CALORIES</div>
-                                <div style="font-size: small; color: rgb(230,6,120);"
-                                    onclick="window.location.href='eat.html'">Clear all</div>
+                                <div id="clearAll">Clear all</div>
                             </div>
-                            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8%;">
-                                <span id="clear_all" style="font-size: 14px;">All</span>
-                                <span id="zero" style="font-size: 13px;">0-200</span>
-                                <span id="two" style="font-size: 13px;">200-500</span>
-                                <span id="four" style="font-size: 13px;">500+</span>
+                            <div id="calorieDiv">
+                                <span id="clear_all">All</span>
+                                <span id="zero">0-200</span>
+                                <span id="two">200-500</span>
+                                <span id="four">500+</span>
                             </div>
 
                             <div style="margin: 20px 0">NUTRITION</div>
-                            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                            <div id="nutTypes">
                                 <div>
                                     <input type="checkbox" id="check1"> High protein
                                 </div>
@@ -111,11 +81,9 @@
                                 <div><input type="checkbox" id="check3"> High fiber</div>
                                 <div><input type="checkbox" id="check4"> Vegan</div>
                             </div>
-                            <div style="margin: 25px;">
-                                <button style="color: rgb(253,50,101);" id="cancel">CANCEL</button>
-                                <button
-                                    style="background-color: rgb(253,50,101); border: none; color: white; box-shadow: rgba(247, 22, 127, 0.24) 0px 3px 8px;"
-                                    id="apply">APPLY</button>
+                            <div>
+                                <button id="cancel">CANCEL</button>
+                                <button id="apply">APPLY</button>
                             </div>
                         </div>
                     </div>
@@ -157,6 +125,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
 
     <div id="footer">
 

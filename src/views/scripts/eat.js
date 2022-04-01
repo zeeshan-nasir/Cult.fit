@@ -16,96 +16,51 @@ document.getElementById("userPic").addEventListener("click", () => {
     window.location.href = "login.html";
 });
 
+document.getElementById("clearAll").addEventListener("click", () => {
+    window.location.href = "eat.html";
+});
+
+
 function login_counter() {
     let cart_data_1 = JSON.parse(localStorage.getItem("cart_data")) || [];
 
     document.getElementById('cart_count').textContent = cart_data_1.length;
 }
+
 login_counter();
-
-
-
-
-
-// -----------------------------------------------------start-------------------------------------------------------------------------------
 
 
 import local_Storage from "../scripts/local_Storage.js";
 
 
-// ------------------------------------------------------slider js-----------------------------------------------------------------------
 
+// Slider
 
 
 let slide = document.querySelector('#sliders');
-let btn1 = document.getElementById('btn1');
-let btn2 = document.getElementById('btn2');
-let btn3 = document.getElementById('btn3');
-
-btn1.onclick = () => {
-    slide.style.transform = 'translateX(0px)';
-    btn1.classList.add("active");
-    btn2.classList.remove("active");
-    btn3.classList.remove("active");
-}
-
-btn2.onclick = () => {
-    slide.style.transform = 'translateX(-100%)';
-    btn1.classList.remove("active");
-    btn2.classList.add("active");
-    btn3.classList.remove("active");
-}
-
-btn3.onclick = () => {
-    slide.style.transform = 'translateX(-200%)';
-    btn1.classList.remove("active");
-    btn2.classList.remove("active");
-    btn3.classList.add("active");
-}
-
-document.getElementById('left_arrow_btn').onclick = () => {
-    slide.style.transform = 'translateX(`${previous}%`)';
-}
-
-document.getElementById('right_arrow_btn').onclick = () => {
-    slide.style.transform = 'translateX(`${previous}%`)';
-}
 
 let count = 0;
+
 setInterval(function () {
-    // console.log(count);
     if (count < -200) {
         count = 0;
     }
     if (count == 0) {
         slide.style.transform = 'translateX(-100%)';
-        btn1.classList.remove("active");
-        btn2.classList.add("active");
-        btn3.classList.remove("active");
     }
     if (count == -100) {
         slide.style.transform = 'translateX(-200%)';
-        btn1.classList.remove("active");
-        btn2.classList.remove("active");
-        btn3.classList.add("active");
     }
 
     if (count == -200) {
         slide.style.transform = 'translateX(0%)';
-        btn1.classList.add("active");
-        btn2.classList.remove("active");
-        btn3.classList.remove("active");
     }
     count -= 100;
 }, 4000);
 
 
-// --------------------------------------------------------------end of slider js-------------------------------------------------------------------------------------
 
-
-
-// ------------------------------------------------------------------append data on dom--------------------------------------------------------------------------------
-
+// Connect frontend to mongo database
 
 
 let url = "http://localhost:4000/eat";
@@ -175,11 +130,6 @@ const displayData = (array) => {
 
         price_div.append(price, str_price, btn);
 
-        // image.onclick = () => {
-        //     localStorage.setItem("product_page_data", JSON.stringify(items));
-        //     window.location.href = 'product.html';
-        // }
-
         div.append(imgDiv, name, type, cal, fiber, price_div);
 
         document.getElementById('dish_item').append(div);
@@ -189,13 +139,8 @@ const displayData = (array) => {
 displayData(data);
 
 
-// ------------------------------------------------------------end of append data------------------------------------------------------
 
-
-
-
-// -------------------------------------------------------------------filter methods ---------------------------------------------------
-
+// Filter functionality
 
 let veg_filter = document.querySelector("#veg_span");
 let flag = false;
@@ -256,8 +201,7 @@ document.getElementById('cancel').onclick = () => {
 }
 
 
-// ---------------------------overlay filter----------------------------------
-
+// Sort by colorie
 
 let cal_span1 = document.getElementById('cal_span1');
 let cal_span2 = document.getElementById('cal_span2');
@@ -279,8 +223,6 @@ ul_list.onclick = () => {
     }
 }
 
-
-// -----------------------------------Filters------------------------------
 
 
 document.getElementById('zero').onclick = () => {
@@ -317,8 +259,8 @@ document.getElementById('four').onclick = () => {
 }
 
 
-// ------------------------------------apply----------------------------
 
+// Filter by dish type
 
 let check1 = document.getElementById('check1');
 let check2 = document.getElementById('check2');
@@ -370,7 +312,7 @@ document.getElementById('clear_all').onclick = () => {
 }
 
 
-// Variety filters ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Filter by variety
 
 document.getElementById("rice").addEventListener("click", () => {
     let veg_arr = [];

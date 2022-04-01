@@ -11,7 +11,6 @@
 
 /* Slider Div */
 
-@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Lato:wght@100&family=Montserrat:wght@200&family=News+Cycle&family=Roboto:ital,wght@0,300;1,300&family=Rubik&family=Spline+Sans:wght@400;500&display=swap");
 
 * {
   margin: 0;
@@ -356,4 +355,44 @@ a {
 
 #nameid {
   margin-bottom: 7px;
+}
+
+/* Calorie Div */
+
+#calorieDiv {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8%;
+}
+
+#calorieDiv > span {
+  font-size: 13px;
+}
+
+#upperFilt {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#clearAll {
+  font-size: small;
+  color: rgb(230, 6, 120);
+}
+
+#nutTypes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+#cancel {
+  color: rgb(253, 50, 101);
+  margin-top: 25px;
+  margin-right: 10px;
+}
+
+#apply {
+  color: rgb(253, 50, 101);
+  margin-top: 25px;
 }

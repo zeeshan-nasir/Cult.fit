@@ -4,10 +4,10 @@ let navbar = () => {
 </div>
 <div id="midDiv">
     <p><a href="cult.html">CULT</a></p>
-    <p><a href="live.html">LIVE</a></p>
+    <p><a href="">LIVE</a></p>
     <p>CARE</p>
     <p>MIND</p>
-    <p><a href="store.html">STORE</a></p>
+    <p><a href="">STORE</a></p>
     <p><a href="eat.html">EAT</a></p>
 </div>
 <div id="lastDiv">
