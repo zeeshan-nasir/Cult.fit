@@ -29,7 +29,7 @@ function login_counter () {
 login_counter();
 
 
-// Data for people also add div
+// Data for left down div
 
 let food_data = [
     { img_url: "https://bit.ly/3LNwF82", name: "Ghar ke Rajma, Aloo Methi & Jeera Pulao", type: "🟢", cal: "824", fibre: "High fibre", price: "89", str_price: "178", des: "What’s better than a rice bowl? A rajma rice bowl! Indulge in the wholesomeness and happiness of the all-appreciated rajma that’s served with our aloo-methi and ghee-ful jeera pulao in this rice bowl.", allergen: "Allergen information: Gluten, egg, soy, vinegar, nutmeg, dairy." },
@@ -44,6 +44,8 @@ let food_data = [
     { img_url: "https://bit.ly/3H9WDPz", name: "Kadhai Paneer, Carrot Beans & Jeera Pulao", type: "🟢", cal: "222", fibre: "High protein", price: "114", str_price: "220", des: "Does a burger always need to be firangi? Definitely not! Eat fit's Dilli special kulcha burger evokes not only nostalgia but also let’s you enjoy traditional tastes in contemporary style. Bite into the layers of whole wheat kulcha with protein packed mashed chole and crunchy sauteed veggies with delight.", allergen: "Allergen Information: Vinegar, Soy, Gluten, Nutmeg, Dairy." },
     { img_url: "https://bit.ly/3IdlOlO", name: "Matar Paneer, Aloo Methi & Jeera Pulao", type: "🟢", cal: "158", fibre: "High fibre", price: "115", str_price: "230", des: "Eat fit’s Indian touch to burger with regional favourites - kulcha and butter paneer masala is an absolute sensation. This innovative and new age kulcha burger retains it's desi core flavour while you enjoy the layers of whole wheat kulcha, butter paneer masala and sauteed veggies together.", allergen: "Allergen Information: Dairy, Vinegar, Soy, Gluten, Nut, Seeds, Nutmeg." },
 ];
+
+// Append data
 
 let cart_data = JSON.parse(localStorage.getItem("cart_data"));
 

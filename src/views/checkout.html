@@ -22,34 +22,36 @@
 
     <!-- Data div -->
 
-    <h2>Checkout</h2>
-    <div id="userInfo">
-        <h3>Delivery Address</h3>
-        <form method="post" action="http://localhost:4000/checkout">
-            <div id="flex">
-                <label id="fName">First Name</label>
-                <input type="text" name="firstName">
-                <label id="lName">Last Name</label>
-                <input type="text" name="lastName">
-            </div>
-            <label id="address">Address Line 1</label>
-            <input type="text" name="address">
-            <label>Address Line 2 (optional)</label>
-            <input type="text">
-            <div id="flex">
-                <label id="city">City</label>
-                <input id="smallLabel" name="city" type="text">
-                <label>State</label>
-                <input id="smallLabel" name="state" type="text">
-                <label>Zip</label>
-                <input class="zipCode" name="zip" id="smallLabel" type="text">
-            </div>
-            <label>Phone</label>
-            <input name="phone" type="text">
-            <label>Email (We require your email to send you receipts and order updates)</label>
-            <input name="email" id="email" type="email">
-            <input type="submit" id="nextBtn" value="Next"></input>
-        </form>
+    <div>
+        <h2>Checkout</h2>
+        <div id="userInfo">
+            <h3>Delivery Address</h3>
+            <form method="post" action="http://localhost:4000/checkout">
+                <div id="flex">
+                    <label id="fName">First Name</label>
+                    <input type="text" name="firstName">
+                    <label id="lName">Last Name</label>
+                    <input type="text" name="lastName">
+                </div>
+                <label id="address">Address Line 1</label>
+                <input type="text" name="address">
+                <label>Address Line 2 (optional)</label>
+                <input type="text">
+                <div id="flex">
+                    <label id="city">City</label>
+                    <input id="smallLabel" name="city" type="text">
+                    <label>State</label>
+                    <input id="smallLabel" name="state" type="text">
+                    <label>Zip</label>
+                    <input class="zipCode" name="zip" id="smallLabel" type="text">
+                </div>
+                <label>Phone</label>
+                <input name="phone" type="text">
+                <label>Email (We require your email to send you receipts and order updates)</label>
+                <input name="email" id="email" type="email">
+                <input type="submit" id="nextBtn" value="Next"></input>
+            </form>
+        </div>
     </div>
 </body>
 

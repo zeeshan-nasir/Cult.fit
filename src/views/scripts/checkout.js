@@ -14,10 +14,6 @@ document.getElementById("cart").addEventListener("click", () => {
     window.location.href = "cart.html";
 });
 
-document.getElementById("cart").addEventListener("click", () => {
-    window.location.href = "payment.html";
-});
-
 
 function login_counter() {
     let cart_data_1 = JSON.parse(localStorage.getItem("cart_data")) || [];

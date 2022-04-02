@@ -1,11 +1,16 @@
+/* Card count */
+
 #cart_count {
-  position: absolute;
+  position: fixed;
   color: yellow;
-  right: 1%;
-  top: 1%;
+  right: 7px;
+  top: 6px;
   font-weight: bold;
   font-size: large;
+  z-index: 100;
 }
+
+/* Main container */
 
 * {
   margin: 0;
@@ -23,16 +28,12 @@
   color: rgb(117, 117, 117);
 }
 
+/* Left Box */
+
 #left {
   width: 55%;
   height: 60%;
   color: rgb(58, 58, 58);
-}
-
-#right {
-  width: 40%;
-  height: 100%;
-  cursor: default;
 }
 
 #textLeftup {
@@ -121,7 +122,9 @@
   height: 100%;
   gap: 2%;
   font-size: 14px;
-  background-color: rgb(221, 221, 221);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(241, 241, 241);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 #left_down > div > div {
@@ -150,25 +153,12 @@
   cursor: pointer;
 }
 
-#address {
-  display: flex;
-  justify-content: space-between;
-  height: 10%;
-  width: 100%;
-}
+/* right div */
 
-#instruction {
-  display: flex;
-  justify-content: space-between;
-  height: 15%;
-  width: 100%;
-}
-
-#time {
-  display: flex;
-  justify-content: space-between;
-  height: 15%;
-  width: 100%;
+#right {
+  width: 40%;
+  height: 100%;
+  cursor: default;
 }
 
 #total_price {

@@ -1,12 +1,13 @@
 /* Cart count */
 
 #cart_count {
-  position: absolute;
+  position: fixed;
   color: yellow;
-  right: 1%;
-  top: 1%;
+  right: 7px;
+  top: 6px;
   font-weight: bold;
   font-size: large;
+  z-index: 100;
 }
 
 /* Slider Div */
