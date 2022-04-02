@@ -13,5 +13,3 @@ Tech Stacks:
 • HTML
 • CSS
 
-Medium blog link: https://medium.com/@zeeeshannasir94/unit-4-project-at-masai-school-67ec35fa1173
-Drive video link:
