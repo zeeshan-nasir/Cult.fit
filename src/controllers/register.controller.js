@@ -1,6 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
+const User = require("../models/user.model.js")
+
 // To register user
 
 router.post("", async (req, res) => {
@@ -11,7 +13,7 @@ router.post("", async (req, res) => {
         }
 
         user = await User.create({
-            fullName: req.body.fullName,
+            userName: req.body.userName,
             email: req.body.email,
             password: req.body.password,
             role: req.body.role,
