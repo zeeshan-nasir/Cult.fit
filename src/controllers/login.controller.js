@@ -29,10 +29,10 @@ router.post("", async (req, res) => {
         const token = generateToken(user);
 
         if (user.role == "customer") {
-            res.cookie('token', token, { httpOnly: false }).redirect("https://cultfitclone.netlify.app/eat.html");
+            res.cookie('token', token, { httpOnly: false }).redirect("views/eat.html");
         }
         else {
-            res.cookie('token', token, { httpOnly: false }).redirect("https://cultfitclone.netlify.app/eat-admin.html");
+            res.cookie('token', token, { httpOnly: false }).redirect("views/eat-admin.html");
         }
     }
     catch (err) {
