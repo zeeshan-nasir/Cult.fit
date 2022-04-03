@@ -19,7 +19,6 @@ router.post("", async (req, res) => {
             role: req.body.role,
         });
 
-        // res.status(200).send({ user });
         return res.status(200).redirect("views/login.html");
     }
     catch (err) {

@@ -30,11 +30,9 @@ router.post("", async (req, res) => {
 
         if (user.role == "customer") {
             res.cookie('token', token, { httpOnly: false }).redirect("views/eat.html");
-            // return res.status(200).redirect('http://127.0.0.1:5500/Cult.fit/eat.html');
         }
         else {
             res.cookie('token', token, { httpOnly: false }).redirect("views/eat-admin.html");
-            // return res.status(200).redirect('http://127.0.0.1:5500/Cult.fit/eat-admin.html');
         }
     }
     catch (err) {

@@ -4,7 +4,7 @@ body {
   margin: 0px;
   padding: 0px;
   width: 100%;
-  font-family: "BrandonTextWeb-Regular";
+  font-family: "BrandonTextWeb-Regular", sans-serif;
 }
 
 #navbar {
