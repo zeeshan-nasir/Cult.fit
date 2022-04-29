@@ -5,11 +5,11 @@ Features:<br>
 • Connected the sign-in and sign up with the backend.<br>
 • Built the entire user flow, front page and several other pages.
 <br>
-Tech Stacks: <br>
-• JavaScript
-• Node.js 
-• Express.js 
-• MongoDB 
-• HTML 
-• CSS
+Tech Stack: <br>
+• JavaScript <br>
+• Node.js <br>
+• Express.js <br>
+• MongoDB <br>
+• HTML <br>
+• CSS <br>
 
