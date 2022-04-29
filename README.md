@@ -16,3 +16,7 @@
 • HTML <br>
 • CSS <br>
 
+<h1>Home Page</h1>
+<br>
+<img>
+
