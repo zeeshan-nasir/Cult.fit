@@ -18,5 +18,18 @@
 
 <h1>Home Page</h1>
 <br>
-<img>
-
+![cult_fit](https://user-images.githubusercontent.com/93468404/165911028-e8ffc107-9da3-4ba4-a0d0-79a26728f041.png)
+<br>
+<h1>Cult Page</h1>
+<br>
+![cult_fit_cult](https://user-images.githubusercontent.com/93468404/165911110-f9cc6572-0c1a-4674-a5a7-f8aca53474c5.png)
+<br>
+<h1>Eat Page</h1>
+<br>
+![cult_fit_eat](https://user-images.githubusercontent.com/93468404/165911201-c57ce783-6550-4f58-8004-2b37da024715.png)
+<br>
+<h1>Login Page</h1>
+<br>
+![cult_fit_login](https://user-images.githubusercontent.com/93468404/165911246-62b9940d-4e26-4f83-a17e-f2676221b772.png)
+<br>
+<br>
