@@ -18,7 +18,8 @@
 
 <h1>Home Page</h1>
 <br>
-![cult_fit](https://user-images.githubusercontent.com/93468404/165911028-e8ffc107-9da3-4ba4-a0d0-79a26728f041.png)
+<img src="https://user-images.githubusercontent.com/93468404/165911028-e8ffc107-9da3-4ba4-a0d0-79a26728f041.png">
+
 <br>
 <h1>Cult Page</h1>
 <br>
