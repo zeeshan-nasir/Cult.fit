@@ -1,4 +1,4 @@
-# Cult.fit
+<h1 text-align="center">Cult.fit</h1>
 • A cloned website of cult.fit, that provides fresh food delivery service in India. <br>
 • Solo project developed in 5 days. 
 <br>
