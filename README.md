@@ -28,7 +28,7 @@
 
 <h1>Eat Page</h1>
 <br>
-<img src="https://user-images.githubusercontent.com/93468404/165911201-c57ce783-6550-4f58-8004-2b37da024715.png">
+<img src="https://user-images.githubusercontent.com/93468404/165931806-7b23d1db-6a53-421d-935b-e38deda04ef2.png">
 <br>
 
 <br>
